@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@200;300;400;500;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+}
+.sidebar{
+    position: absolute;
+    height: 100vh;
+    /* width: 300px; */
+    width: 80px;
+    background-color: #fff;
+    transition: 0.5s;
+    padding-left: 10px;
+    overflow: hidden;
+}
+.sidebar.active{
+    width: 300px;
+}
+.sidebar ul{
+   position: relative;
+   height: 100vh;
+}
+.sidebar ul li{
+    position: relative;
+    list-style: none;
+    
+}
+.sidebar ul li.active{
+    background: var(--bg);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.sidebar ul .logo{
+   margin-bottom: 50px;
+}
+.sidebar ul .logo .icon{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.sidebar ul .logo .text{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.sidebar ul li a{
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.sidebar ul li a .icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    color: #333;
+    transition: 0.5s;
+}
+.sidebar ul li a .text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    height: 60px;
+    color: #333;
+    padding-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.sidebar ul li a:hover .icon,
+.sidebar ul li a:hover .text{
+    color: red;
+}
+.buttom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.img-box{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-box>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menuToggle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.menuToggle>i{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+

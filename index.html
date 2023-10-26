@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="menuToggle">
+        <i class="fa-solid fa-bars toggleBar"></i>
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+    </div>
+    <div class="sidebar">
+            <ul>
+               <div class="logo">
+                    <li>
+                        <a >
+                            <div class="icon"><i class="fa-brands fa-apple"></i></div>
+                            <div class="text">Website Logo</div>
+                        </a>
+                    </li>
+               </div>
+               <div class="menulist">
+                <li style="--bg:#f44336;" class="active">
+                    <a href="#home">
+                        <div class="icon"><i class="fa-solid fa-house"></i></div>
+                        <div class="text">Home</div> 
+                    </a>
+                </li>
+                <li style="--bg:#ffa117;">
+                    <a href="#profile">
+                        <div class="icon"><i class="fa-solid fa-user"></i></div>
+                        <div class="text">Profiile</div> 
+                    </a>
+                </li>
+                <li style="--bg:#07c70f;">
+                    <a>
+                        <div class="icon"><i class="fa-solid fa-comment"></i></div>
+                        <div class="text">inbox</div> 
+                    </a>
+                </li>
+                <li style="--bg:#8e44ad;">
+                    <a>
+                        <div class="icon"><i class="fa-solid fa-chart-simple"></i></div>
+                        <div class="text">Analytics</div> 
+                    </a>
+                </li>
+                <li style="--bg:#3498db;">
+                    <a>
+                        <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="text">Order</div> 
+                    </a>
+                </li>
+                <li style="--bg:#e67e22;">
+                    <a>
+                        <div class="icon"><i class="fa-solid fa-gears"></i></div>
+                        <div class="text">Setings</div> 
+                    </a>
+                </li>
+               </div>
+               <div class="buttom">
+                <li>
+                    <a>
+                        <div class="icon">
+                            <div class="img-box">
+                                <img src="./my photo1.jpeg" alt="">
+                            </div> 
+                        </div>
+                        <div class="text">Prashanta Nayak</div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="icon"><i class="fa-solid fa-right-from-bracket"></i></div>
+                        <div class="text">Logout</div> 
+                    </a>
+                </li>
+               </div>
+            </ul>
+    </div>
+
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
